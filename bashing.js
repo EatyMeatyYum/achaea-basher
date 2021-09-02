@@ -250,6 +250,8 @@ var keneanung = (function (keneanung) {
                     attacking++;
                 }
                 send_GMCP("IRE.Target.Set", targetList[attacking].id + "");
+                send_command("st " + targetList[attacking].id);
+                console.log("Manual Target Set!!!");
             }
         };
 
