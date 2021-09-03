@@ -1,4 +1,4 @@
-// Latest build: 9/2/2021
+// Latest build: 9/3/2021
 
 var keneanung = (function (keneanung) {
     "use strict";
@@ -250,7 +250,7 @@ var keneanung = (function (keneanung) {
                     attacking++;
                 }
                 send_GMCP("IRE.Target.Set", targetList[attacking].id + "");
-                send_command("st " + targetList[attacking].id);
+                send_direct("st " + targetList[attacking].id);
                 console.log("Manual Target Set!!!");
             }
         };
